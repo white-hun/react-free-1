@@ -12,9 +12,9 @@ import NotificationList from "./chapter_06/NotificationList";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 setInterval(() => {
   root.render(
-    <React.StrictMode>
-      <NotificationList />
-    </React.StrictMode>
+    // <React.StrictMode>
+    <NotificationList />
+    // </React.StrictMode>
   );
 }, 1000);
 
