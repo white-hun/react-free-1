@@ -12,16 +12,3 @@ function Library(props) {
 }
 
 export default Library;
-
-function clock() {
-  const element = (
-    <div>
-      <h1>Hello, React</h1>
-      <h2>Current time: {new Date().toLocaleTimeString()}</h2>
-    </div>
-  );
-
-  ReactDOM.render(element, document.getElementById("root"));
-}
-
-setInterval(clock, 1000);

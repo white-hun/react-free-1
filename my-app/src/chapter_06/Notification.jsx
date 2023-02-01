@@ -21,7 +21,7 @@ class Notification extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {}; // state에 아무런 값 없음
   }
 
   componentDidMount() {
