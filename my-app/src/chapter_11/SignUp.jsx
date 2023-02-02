@@ -37,3 +37,58 @@ function SignUp(props) {
 }
 
 export default SignUp;
+
+// ---------------------------------------------------
+ function BoilingVerdict(props) {
+    if (props.celsius >= 100) {
+        return <p>Boil</p>
+    }
+    return <p>Not boil</p>
+ }
+
+ export default BoilingVerdict;
+//  ---------------------------------------------------
+function Calculator(props) {
+    const [temperature, setTemperature] = useState("");
+
+    const handleChange = (event) => {
+        setTemperature(event.target.value);
+    }
+
+    return (
+        <fieldset>
+                <legend>Write a celsius</legend>
+                <input
+                    value={temperature}
+                    onChange={handleChange} />
+                <BoilingVerdict
+                    celsius={parseFloat(temperature)} />
+        </fieldset>
+    )
+}
+
+export default Calculator;
+// ---------------------------------------------------
+
+const scaleNames = {
+    c: "celsius",
+    f: "far"
+};
+
+function Temperature(props) {
+    const [Temperature, setTemperature] = useState("");
+
+    const handleChange = (event) => {
+        setTemperature(event.target.value);
+    }
+
+    return (
+        <fieldset>
+                <legend>
+                    Write a temperature(level:{scaleNames[props.scale]});
+                </legend>
+                <input value={temperature} onChange={handleChange} />
+        </fieldset>
+    )
+}
+export default Temperature;
