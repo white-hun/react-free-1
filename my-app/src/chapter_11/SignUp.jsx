@@ -13,7 +13,7 @@ function SignUp(props) {
   };
 
   const handleSubmit = (event) => {
-    alert(`Name: ${name}, sex: ${gender}`);
+    alert(`Name: ${name}, Sex: ${gender}`);
     event.preventDefault();
   };
 
@@ -25,10 +25,10 @@ function SignUp(props) {
       </label>
       <br />
       <label>
-        sex:
+        Sex:
         <select value={gender} onChange={handleChangeGender}>
           <option value="man">Man</option>
-          <option value="woman">Wom an</option>
+          <option value="woman">Woman</option>
         </select>
       </label>
       <button type="submit">Submit</button>
