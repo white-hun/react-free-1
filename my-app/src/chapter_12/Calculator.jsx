@@ -63,39 +63,3 @@ function Calculator(props) {
 }
 
 export default Calculator;
-
-function FancyBorder(props) {
-  // props.children을 사용하면 해당 컴포넌트의 하위 컴포넌트가 모두 children으로 들어온다
-  return <div className={"FancyBorder FancyBorder-" + props.color}>{props.children}</div>;
-}
-
-// children이라는 prop은 react에서 제공해주는 것
-
-//----------------------------------------------------
-
-function WelcomeDialog(props) {
-  // FancyBorder 컴포넌트 안에 있는 모든 JSX 태그는 children으로 전달
-  return (
-    <FancyBorder color="blue">
-      <h1 className="Dialog-title">Hello</h1>
-      <p className="Dialog-message">Welcome to our site</p>
-    </FancyBorder>
-  );
-}
-
-//----------------------------------------------------
-
-// 여러개의 children 집합이 필요한 경우
-// 화면을 외쪽과 오른쪽으로 분할해서 보여주는 컴포넌트
-function SplitPane(props) {
-  return (
-    <div className="SplitPane">
-      <div className="SplitPane-left">{props.left}</div>
-      <div className="SplitPane-right">{props.right}</div>
-    </div>
-  );
-}
-
-function APP(props) {
-  return <SplitPane left={<Contacts />} right={<Chat />} />;
-}
