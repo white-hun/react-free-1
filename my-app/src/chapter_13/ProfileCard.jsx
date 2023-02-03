@@ -64,26 +64,3 @@ function ThemedButton(props) {
   // 여기에서는 상위 Provider가 있기 때문에 현재 테마의 값은 'dark'가 된다
   return <ThemeContext.Consumer>{(value) => <Button theme={value} />}</ThemeContext.Consumer>;
 }
-
-// Provider 컴포넌트가 재렌더링될 때 마다 모든 하위 Consumer 컴포넌트를 재렌더링
-// value prop을 위한 새로운 객체가 매번 새롭게 생성 되기 때문이다
-// 이를 방지하기 위해서는 value를 직접 넣는 것이 아닌 컴포넌트의 state로 옮기고
-// 해당 state에 값을 넣어 줘야 한다
-function App(props) {
-  return (
-    <MyContext.Provider value={{ something: "something" }}>
-      <Toolbar />
-    </MyContext.Provider>
-  );
-}
-
-// 수정 후 코드
-function App(props) {
-  const [value, setValue] = useState({ something: "something" });
-
-  return (
-    <MyContext.Provider value={value}>
-      <Toolbar />
-    </MyContext.Provider>
-  );
-}
