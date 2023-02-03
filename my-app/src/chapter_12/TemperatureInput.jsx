@@ -1,6 +1,6 @@
 const scaleNames = {
-  c: "celsius",
-  f: "fahrenheit",
+  C: "celsius",
+  F: "fahrenheit",
 };
 
 // props로 scale과 temperature를 받아서 표시
