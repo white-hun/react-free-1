@@ -5,7 +5,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-between;
     background-color: lightgrey;
 `;
 
@@ -24,30 +24,30 @@ const blockItems = [
     {
         label: "1",
         padding: "1rem",
-        bakcgroundColor:"red",
+        backgroundColor: "red",
     },
     {
         label: "2",
         padding: "3rem",
-        bakcgroundColor:"green",
+        backgroundColor: "green",
     },
     {
         label: "3",
         padding: "2rem",
-        bakcgroundColor:"blue",
+        backgroundColor: "blue",
     },
 ];
 
 function Blocks(props) {
     return(
         <Wrapper>
-            {blockItems.map((blackItem) => {
+            {blockItems.map((blockItem) => {
                 return (
                     <Block
-                        padding={blockItems.padding}
-                        backgroundColor={blackItem.backgroundColor}
+                        padding={blockItem.padding}
+                        backgroundColor={blockItem.backgroundColor}
                     >
-                        {blockItems.label}
+                        {blockItem.label}
                     </Block>
                 );
             })}
