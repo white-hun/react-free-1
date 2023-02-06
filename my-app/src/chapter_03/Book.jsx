@@ -1,5 +1,7 @@
 import React from "react";
 
+// Book 컴포넌트
+// props로 name과 numOfPage를 받아서 출력
 function Book(props) {
   return (
     <div>
