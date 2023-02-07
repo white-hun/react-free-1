@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React from "react";
 import Notification from "./Notification";
 
 // Notification component를 목록형으로 보여주기 위한 component
