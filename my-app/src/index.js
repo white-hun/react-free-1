@@ -7,8 +7,8 @@ import reportWebVitals from "./reportWebVitals";
 // import Library from "./chapter_03/Library";
 // import Clock from "./chapter_04/clock";
 // import CommentList from "./chapter_05/CommentList";
-import NotificationList from "./chapter_06/NotificationList";
-// import Accommodate from "./chapter_07/Accommodate";
+// import NotificationList from "./chapter_06/NotificationList";
+import Accommodate from "./chapter_07/Accommodate";
 // import ConfirmButton from "./chapter_08/ConfirmButton";
 // import LandingPage from "./chapter_09/LandingPage";
 // import AttendanceBook from "./chapter_10/AttendanceBook";
@@ -22,7 +22,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // setInterval(() => {
 root.render(
   // <React.StrictMode>
-  <NotificationList />
+  // <NotificationList />
+  <Accommodate />
   // <Blocks />
   // </React.StrictMode>
 );
