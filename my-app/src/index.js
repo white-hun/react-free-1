@@ -28,7 +28,9 @@ root.render(
   // <LandingPage />
   // <AttendanceBook />
   // <SignUp />
-  <Calculator />
+  // <Calculator />
+  <ProfileCard />
+  // <DarkOrLight />
   // <Blocks />
   // </React.StrictMode>
 );

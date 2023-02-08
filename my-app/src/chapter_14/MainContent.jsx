@@ -15,8 +15,8 @@ function MainContent(props) {
                 width: "100vw",
                 height: "100vh",
                 padding: "1.5rem",
-                backgroundColor: theme === "light" ? "white" : "black",
-                color: theme === "light" ? "black" : "white",
+                backgroundColor: theme === "light" ? "white" : "#252525",
+                color: theme === "light" ? "#252525" : "white",
             }}
         >
             <p>Hello, Wedsite Changing theme</p>
