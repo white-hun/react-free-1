@@ -31,3 +31,22 @@ function AttendanceBook(props) {
 }
 
 export default AttendanceBook;
+
+//-----------------------------------------------------------
+
+// // props로 숫자배열인 numbers를 받는다
+// // 이를 목록으로 출력
+// function NumberList(props) {
+//     const {numbers} = props
+//     const listItems = numbers.map((number) =>
+//         <li>{number}</li>
+//     )
+//     return(
+//         <ul>{listItems}</ul>
+//     );
+// }
+// const numbers = [1, 2, 3, 4, 5];
+// ReactDOM.render(
+//     <NumberList numbers={numbers} />,
+//     document.getElementById("root")
+// );

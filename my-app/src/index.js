@@ -25,7 +25,9 @@ root.render(
   // <NotificationList />
   // <Accommodate />
   // <ConfirmButton />
-  <LandingPage />
+  // <LandingPage />
+  // <AttendanceBook />
+  <SignUp />
   // <Blocks />
   // </React.StrictMode>
 );
