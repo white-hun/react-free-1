@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// 이름과 성별을 저장할 수 잇는 state
 function SignUp(props) {
   const [name, setName] = useState("");
   const [gender, setGender] = useState("man");
@@ -17,6 +18,7 @@ function SignUp(props) {
     event.preventDefault();
   };
 
+  // 이름을 입력할 수 있는 input
   return (
     <form onSubmit={handleSubmit}>
       <label>
