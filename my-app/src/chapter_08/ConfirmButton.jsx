@@ -4,12 +4,14 @@
 //   constructor(props) {
 //     super(props);
 
+//     // 확인여부를 저장하기위해 isConfirmed 변수을 가지고 있으면 초기값 false
 //     this.state = {
 //       isConfirmed: false,
 //     };
 //     this.handleConfirm = this.handleConfirm.bind(this);
 //   }
 
+//   // 클릭이벤트를 처리하기 위해 event handler로 handleConfirm 함수 추가
 //   handleConfirm() {
 //     this.setState((prevState) => ({
 //       isConfirmed: !prevState.isConfirmed,
@@ -61,6 +63,7 @@
 // export default ConfirmButton;
 
 //------------------------------------------------------------------------------
+
 // 함수 컴포넌트로 변경(class 컴포넌트는 이제 거의 사용하지 않는다)
 import React, { useState } from "react";
 

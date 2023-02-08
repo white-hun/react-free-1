@@ -21,9 +21,8 @@ function Toolbar(props) {
 
   // &&연산자 와 3항 연산자를 사용하여
   // 각각
-  // Inline if
-  // Inline if-else
-  //구현
+  // Inline if (login 상태(isLoggedIn)가 true이면 'Welcome'메세지 출력)
+  // Inline if-else (login 상태(isLoggedIn)가 true이면 Logout버튼 출력, false이면 Login 버튼 출력)
   return (
     <div style={styles.wrapper}>
       {isLoggedIn && <span style={styles.greeting}>Welcome!</span>}
