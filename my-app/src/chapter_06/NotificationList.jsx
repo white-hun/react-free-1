@@ -51,6 +51,7 @@ class NotificationList extends React.Component {
     }, 1000);
   }
 
+  // key는 map 함수를 사용할 때 필수 적으로 들어가야한다
   render() {
     return (
       <div>
