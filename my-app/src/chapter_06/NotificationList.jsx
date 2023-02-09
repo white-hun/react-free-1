@@ -44,7 +44,7 @@ class NotificationList extends React.Component {
         });
       } else {
         this.setState({
-          notifications: [],
+          notifications: [], // 알림 추가가 끝나면 notifications 배열을 비운다
         });
         clearInterval(timer);
       }
